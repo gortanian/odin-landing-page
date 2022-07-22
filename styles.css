@@ -1,6 +1,16 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.header, .hero-section, .info-section, .quote-section, .call-to-action-section {
+    padding: 24px 200px;
+}
+
+.header, .footer, .hero-section {
+    background-color: #1f2937;
+    color: #f9faf8;
 }
 
 .header {
@@ -9,15 +19,39 @@ body {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: #f9faf8;
+h1 {
+    margin: 0;
 }
 
-.header, .footer, .hero-section {
-    background-color: #1f2937;
-    color: #f9faf8;
+.hero-section {
+    display: flex;
+    margin: 0;
+    padding: 120px 200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
 }
+
+.hero-section p {
+    color: #f9faf8b7;
+}
+
+.hero-section > * {
+    flex: 1 1 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8b7;
+    font-weight: lighter;
+}
+
+.link-container {
+    display: flex;
+    gap: 24px;
+}
+
+
 
 .hero-section h1 {
     font-size: 48px;
@@ -26,6 +60,8 @@ a {
 
 .hero-section p, .header a {
     font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header h1 {
@@ -35,9 +71,12 @@ a {
 button {
     background-color: #3882f6;
     color: #f9faf8;
+    padding: 16px 32px;
+    border: 0px;
+    border-radius: 10px;
 }
 
-.section-2 h1{
+.info-section h1{
     font-size: 36px; 
     font-weight: extra-bold;
     color: #1f2937;
@@ -54,4 +93,13 @@ button {
 .call-to-action-card {
     background-color: #3882f6;
     color: #f9faf8;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero-section .container img {
+    width: 550px;
+    height: 275px;
 }
