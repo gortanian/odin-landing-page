@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.header, .footer, .hero-section {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+.hero-section p, .header a {
+    font-size: 18px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+.section-2 h1{
+    font-size: 36px; 
+    font-weight: extra-bold;
+    color: #1f2937;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937
+}
+
+.call-to-action-card {
+    background-color: #3882f6;
+    color: #f9faf8;
+}
