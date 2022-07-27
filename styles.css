@@ -51,8 +51,6 @@ a {
     gap: 24px;
 }
 
-
-
 .hero-section h1 {
     font-size: 48px;
     font-weight: extra-bold;
@@ -76,23 +74,82 @@ button {
     border-radius: 10px;
 }
 
-.info-section h1{
+.info-section, .quote-section {
+    padding-left: 300px; 
+    padding-right: 300px; 
+}
+
+.info-section h1 {
     font-size: 36px; 
     font-weight: extra-bold;
     color: #1f2937;
+    text-align: center;
+    margin-bottom: 50px; 
 }
 
+.info-section .container {
+    display: flex; 
+    flex: 1 1 0;
+    gap: 50px; 
+    margin-bottom: 50px; 
+}
+
+.media img {
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.media p {
+    text-align: center;
+    opacity: 80%;
+}
+
+
 .quote-section {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
     background-color: #e5e7eb;
     font-size: 36px;
     font-weight: light;
     font-style: italic;
-    color: #1f2937
+    color: #1f2937;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.quote-section p {
+    margin: 0px; 
+    opacity: 80%;
+}
+.author {
+    text-align: right;
+    font-style: normal; 
+    font-weight: bold; 
+    font-size: 28px; 
 }
 
 .call-to-action-card {
     background-color: #3882f6;
+    border-radius: 10px;
     color: #f9faf8;
+    display: flex; 
+    padding: 50px 100px; 
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action-card button {
+    border: 3px solid white; 
+    padding: 10px 40px; 
+    font-size: 16px; 
+}
+
+.call-to-action-card .container p {
+    opacity: 80%;
+    margin: 0px; 
 }
 
 img {
@@ -102,4 +159,14 @@ img {
 .hero-section .container img {
     width: 550px;
     height: 275px;
+}
+
+.footer {
+    display: flex; 
+    justify-content: center;
+    padding: 30px; 
+}
+
+.footer p {
+    opacity: 80%; 
 }
